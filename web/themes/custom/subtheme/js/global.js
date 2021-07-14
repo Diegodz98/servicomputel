@@ -11,12 +11,7 @@
       attach: function (context, settings) {
 
       }
-
-
   };
-
-
-
 
   const menu = document.querySelector('.navbar button');
   let estado = menu.getAttribute('aria-expanded');
@@ -36,11 +31,12 @@
   $(".nav-link").on("click", () => {
       $('.navbar-collapse').collapse('hide')
   })
-
+ 
   const menuAdmin = document.querySelector('#toolbar-bar');
   console.log( document.querySelector('#navbarPrincipal'))
   if (menuAdmin) {
-      document.querySelector('#navbarPrincipal').classList.add('top100');
+      console.log('hola')
+      document.querySelector('#navbarPrincipal').classList.remove('fixed-top');
   }
 
 
