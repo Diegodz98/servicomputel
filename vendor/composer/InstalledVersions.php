@@ -14,12 +14,12 @@ class InstalledVersions
 private static $installed = array (
   'root' => 
   array (
-    'pretty_version' => '1.0.0+no-version-set',
-    'version' => '1.0.0.0',
+    'pretty_version' => 'dev-main',
+    'version' => 'dev-main',
     'aliases' => 
     array (
     ),
-    'reference' => NULL,
+    'reference' => 'd148a8272423811e18930cebd213608ac596c5eb',
     'name' => 'drupal/recommended-project',
   ),
   'versions' => 
@@ -147,6 +147,15 @@ private static $installed = array (
       array (
         0 => '9.2.1',
       ),
+    ),
+    'drupal/bootstrap_barrio' => 
+    array (
+      'pretty_version' => '5.5.1',
+      'version' => '5.5.1.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '5.5.1',
     ),
     'drupal/breakpoint' => 
     array (
@@ -723,12 +732,12 @@ private static $installed = array (
     ),
     'drupal/recommended-project' => 
     array (
-      'pretty_version' => '1.0.0+no-version-set',
-      'version' => '1.0.0.0',
+      'pretty_version' => 'dev-main',
+      'version' => 'dev-main',
       'aliases' => 
       array (
       ),
-      'reference' => NULL,
+      'reference' => 'd148a8272423811e18930cebd213608ac596c5eb',
     ),
     'drupal/responsive_image' => 
     array (
@@ -1434,6 +1443,15 @@ private static $installed = array (
       ),
       'reference' => '81cdac5536925c1c4b7b50aabc9ff6330b9eb5fc',
     ),
+    'twbs/bootstrap' => 
+    array (
+      'pretty_version' => 'v5.0.2',
+      'version' => '5.0.2.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '688bce4fa695cc360a0d084e34f029b0c192b223',
+    ),
     'twig/twig' => 
     array (
       'pretty_version' => 'v2.14.6',
@@ -1442,6 +1460,13 @@ private static $installed = array (
       array (
       ),
       'reference' => '27e5cf2b05e3744accf39d4c68a3235d9966d260',
+    ),
+    'twitter/bootstrap' => 
+    array (
+      'replaced' => 
+      array (
+        0 => 'v5.0.2',
+      ),
     ),
     'typo3/phar-stream-wrapper' => 
     array (
