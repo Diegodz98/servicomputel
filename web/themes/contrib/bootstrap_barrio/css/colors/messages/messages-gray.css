@@ -51,6 +51,6 @@
   width: 1.75rem;
   height: 1.75rem;
 }
-.alert-dismissible .btn-close {
+.alert-dismissible .close {
   opacity: 0.6;
 }

@@ -52,6 +52,6 @@
   background-color: #ff4444;
   border-color: #cc0000;
 }
-.alert-dismissible .btn-close {
+.alert-dismissible .close {
   opacity: 0.6;
 }

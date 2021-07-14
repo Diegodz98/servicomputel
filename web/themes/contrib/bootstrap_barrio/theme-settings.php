@@ -441,25 +441,6 @@ function bootstrap_barrio_form_system_theme_settings_alter(&$form, FormStateInte
     '#default_value' => theme_get_setting('bootstrap_barrio_navbar_slide'),
   ];
 
-  // Tabs.
-  $form['components']['tabs'] = [
-    '#type' => 'details',
-    '#title' => t('Tabs (local tasks)'),
-    '#collapsible' => TRUE,
-    '#collapsed' => TRUE,
-  ];
-
-  $form['components']['tabs']['bootstrap_barrio_tabs_style'] = [
-    '#type' => 'select',
-    '#title' => t('Tabs style'),
-    '#default_value' => theme_get_setting('bootstrap_barrio_tabs_style'),
-    '#options' => [
-      'full' => t('Full width blocks'),
-      'pills' => t('Pills'),
-    ],
-    '#empty_option' => t('Default'),
-  ];
-
   // Messages.
   $form['components']['alerts'] = [
     '#type' => 'details',
@@ -475,6 +456,51 @@ function bootstrap_barrio_form_system_theme_settings_alter(&$form, FormStateInte
       'default' => t('Alerts classic'),
       'alerts' => t('Alerts bottom'),
       'toasts' => t('Toasts'),
+    ],
+  ];
+
+  // Form.
+  $form['components']['form'] = [
+    '#type' => 'details',
+    '#title' => t('Form'),
+    '#collapsible' => TRUE,
+    '#collapsed' => TRUE,
+  ];
+  $form['components']['form']['bootstrap_barrio_radio'] = [
+    '#type' => 'select',
+    '#title' => t('Radio widget'),
+    '#default_value' => theme_get_setting('bootstrap_barrio_radio'),
+    '#options' => [
+      'standard' => t('Standard'),
+      'custom' => t('Custom'),
+    ],
+  ];
+  $form['components']['form']['bootstrap_barrio_checkbox'] = [
+    '#type' => 'select',
+    '#title' => t('Checkbox widget'),
+    '#default_value' => theme_get_setting('bootstrap_barrio_checkbox'),
+    '#options' => [
+      'standard' => t('Standard'),
+      'custom' => t('Custom'),
+      'switch' => t('Switch'),
+    ],
+  ];
+  $form['components']['form']['bootstrap_barrio_select'] = [
+    '#type' => 'select',
+    '#title' => t('Select widget'),
+    '#default_value' => theme_get_setting('bootstrap_barrio_select'),
+    '#options' => [
+      'standard' => t('Standard'),
+      'custom' => t('Custom'),
+    ],
+  ];
+  $form['components']['form']['bootstrap_barrio_file'] = [
+    '#type' => 'select',
+    '#title' => t('File widget'),
+    '#default_value' => theme_get_setting('bootstrap_barrio_file'),
+    '#options' => [
+      'standard' => t('Standard'),
+      'custom' => t('Custom'),
     ],
   ];
 

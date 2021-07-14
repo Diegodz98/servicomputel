@@ -17,7 +17,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        node: [12, 14, 16]
+        node: [10, 12, 14]
 
     steps:
       - name: Clone repository
@@ -32,9 +32,10 @@ jobs:
         uses: actions/cache@v2
         with:
           path: ~/.npm
-          key: ${{ runner.os }}-node-${{ matrix.node }}-${{ hashFiles('package.json') }}-${{ hashFiles('package-lock.json') }}
+          key: ${{ runner.os }}-node-v${{ matrix.node }}-${{ hashFiles('package.json') }}-${{ hashFiles('package-lock.json') }}}
           restore-keys: |
-            ${{ runner.os }}-node-${{ matrix.node }}-${{ hashFiles('package.json') }}-${{ hashFiles('package-lock.json') }}
+            ${{ runner.os }}-node-v${{ matrix.node }}-${{ hashFiles('package.json') }}-${{ hashFiles('package-lock.json') }}
+            ${{ runner.os }}-node-v${{ matrix.node }}-
 
       - name: Install npm dependencies
         run: npm ci
@@ -46,7 +47,7 @@ jobs:
         run: npm run js-test
 
       - name: Run Coveralls
-        uses: coverallsapp/github-action@v1.1.2
+        uses: coverallsapp/github-action@master
         if: matrix.node == 14
         with:
           github-token: "${{ secrets.GITHUB_TOKEN }}"
