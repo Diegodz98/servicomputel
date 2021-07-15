@@ -19,7 +19,7 @@ private static $installed = array (
     'aliases' => 
     array (
     ),
-    'reference' => '3cf4d1ac893576775ee8f25dccfb719c2179bcbc',
+    'reference' => 'ec313fbe0054b930e8c7c302e5daeb87be0f7ace',
     'name' => 'drupal/recommended-project',
   ),
   'versions' => 
@@ -764,7 +764,7 @@ private static $installed = array (
       'aliases' => 
       array (
       ),
-      'reference' => '3cf4d1ac893576775ee8f25dccfb719c2179bcbc',
+      'reference' => 'ec313fbe0054b930e8c7c302e5daeb87be0f7ace',
     ),
     'drupal/responsive_image' => 
     array (
@@ -928,6 +928,15 @@ private static $installed = array (
       array (
         0 => '9.2.1',
       ),
+    ),
+    'drupal/webform' => 
+    array (
+      'pretty_version' => '6.0.0',
+      'version' => '6.0.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '6.0.0',
     ),
     'drupal/workflows' => 
     array (
