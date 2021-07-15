@@ -218,14 +218,18 @@ Menu Principal
     transition: all 0.5s ease;
     transform:  scale(0);
 }
-.navbar .nav-item .nav-link.active::before,
+.navbar .nav-item .nav-link.is-active::before,
 .navbar .nav-item .nav-link:hover::before{
     transform:  scale(1);
 }
+.navbar .nav-item .nav-link.is-active,
 .navbar .nav-item .nav-link:hover{
     color: var(--color-1);
 }
+.navbar .nav-item .is-active{
+    color: var(--color-1);
 
+}
 .top100{
     top:79px!important;
     
