@@ -6,6 +6,7 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'libphonenumber\\' => array($vendorDir . '/giggsey/libphonenumber-for-php/src'),
     'Twig\\' => array($vendorDir . '/twig/twig/src'),
     'TYPO3\\PharStreamWrapper\\' => array($vendorDir . '/typo3/phar-stream-wrapper/src'),
     'Symfony\\Polyfill\\Php80\\' => array($vendorDir . '/symfony/polyfill-php80'),
@@ -50,6 +51,7 @@ return array(
     'GuzzleHttp\\Psr7\\' => array($vendorDir . '/guzzlehttp/psr7/src'),
     'GuzzleHttp\\Promise\\' => array($vendorDir . '/guzzlehttp/promises/src'),
     'GuzzleHttp\\' => array($vendorDir . '/guzzlehttp/guzzle/src'),
+    'Giggsey\\Locale\\' => array($vendorDir . '/giggsey/locale/src'),
     'Egulias\\EmailValidator\\' => array($vendorDir . '/egulias/email-validator/src'),
     'Drupal\\Driver\\' => array($baseDir . '/web/drivers/lib/Drupal/Driver'),
     'Drupal\\Core\\' => array($baseDir . '/web/core/lib/Drupal/Core'),

@@ -6,7 +6,7 @@
     'aliases' => 
     array (
     ),
-    'reference' => 'b769570235aaa5147253acc50764363ceec092b1',
+    'reference' => '3cf4d1ac893576775ee8f25dccfb719c2179bcbc',
     'name' => 'drupal/recommended-project',
   ),
   'versions' => 
@@ -751,7 +751,7 @@
       'aliases' => 
       array (
       ),
-      'reference' => 'b769570235aaa5147253acc50764363ceec092b1',
+      'reference' => '3cf4d1ac893576775ee8f25dccfb719c2179bcbc',
     ),
     'drupal/responsive_image' => 
     array (
@@ -851,6 +851,15 @@
         0 => '9.2.1',
       ),
     ),
+    'drupal/telephone_validation' => 
+    array (
+      'pretty_version' => '2.3.0',
+      'version' => '2.3.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '8.x-2.3',
+    ),
     'drupal/text' => 
     array (
       'replaced' => 
@@ -907,15 +916,6 @@
         0 => '9.2.1',
       ),
     ),
-    'drupal/webform' => 
-    array (
-      'pretty_version' => '6.0.4',
-      'version' => '6.0.4.0',
-      'aliases' => 
-      array (
-      ),
-      'reference' => '6.0.4',
-    ),
     'drupal/workflows' => 
     array (
       'replaced' => 
@@ -938,6 +938,24 @@
       array (
       ),
       'reference' => '0dbf5d78455d4d6a41d186da50adc1122ec066f4',
+    ),
+    'giggsey/libphonenumber-for-php' => 
+    array (
+      'pretty_version' => '8.12.27',
+      'version' => '8.12.27.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'f4d3aab2d2f7e0f82381303019be77fd22c49efe',
+    ),
+    'giggsey/locale' => 
+    array (
+      'pretty_version' => '1.9',
+      'version' => '1.9.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'b07f1eace8072ccc61445ad8fbd493ff9d783043',
     ),
     'guzzlehttp/guzzle' => 
     array (

@@ -42,6 +42,10 @@ class ComposerStaticInitb56520fa2f29d7843791929a02e0440e
     );
 
     public static $prefixLengthsPsr4 = array (
+        'l' => 
+        array (
+            'libphonenumber\\' => 15,
+        ),
         'T' => 
         array (
             'Twig\\' => 5,
@@ -103,6 +107,7 @@ class ComposerStaticInitb56520fa2f29d7843791929a02e0440e
             'GuzzleHttp\\Psr7\\' => 16,
             'GuzzleHttp\\Promise\\' => 19,
             'GuzzleHttp\\' => 11,
+            'Giggsey\\Locale\\' => 15,
         ),
         'E' => 
         array (
@@ -130,6 +135,10 @@ class ComposerStaticInitb56520fa2f29d7843791929a02e0440e
     );
 
     public static $prefixDirsPsr4 = array (
+        'libphonenumber\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/giggsey/libphonenumber-for-php/src',
+        ),
         'Twig\\' => 
         array (
             0 => __DIR__ . '/..' . '/twig/twig/src',
@@ -306,6 +315,10 @@ class ComposerStaticInitb56520fa2f29d7843791929a02e0440e
         'GuzzleHttp\\' => 
         array (
             0 => __DIR__ . '/..' . '/guzzlehttp/guzzle/src',
+        ),
+        'Giggsey\\Locale\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/giggsey/locale/src',
         ),
         'Egulias\\EmailValidator\\' => 
         array (
