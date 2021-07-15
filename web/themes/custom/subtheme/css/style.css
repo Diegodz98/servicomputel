@@ -60,7 +60,7 @@ body{
     font-weight: 400;
     text-transform: capitalize;
 }
-
+.webform-button--submit.btn-1.button.button--primary.js-form-submit.form-submit.btn.btn-primary,
 .btn-1{
     background-color: var(--color-1);
     padding: 12px 30px;
@@ -73,10 +73,11 @@ body{
     box-shadow: var(--shadow-block-300);
     font-weight: 500;
 }
-
+.webform-button--submit.btn-1.button.button--primary.js-form-submit.form-submit.btn.btn-primary:focus,
 .btn-1:focus{
     box-shadow: var(--shadow-block-300);
 }
+.webform-button--submit.btn-1.button.button--primary.js-form-submit.form-submit.btn.btn-primary:hover,
 .btn-1:hover{
     color: var(--color-1);
     background-color: #fff;
@@ -235,10 +236,7 @@ Menu Principal
     
 }
 
-.content{
-    margin-top: 80px;
 
-}
 /*-------------------
 Banner
 --------------------*/
@@ -487,9 +485,14 @@ background-color: var(--black-100);
 Contact Section
 ------------------*/
 .contacto{
-    background-color: var(--black-100);
+    /* background-color: var(--black-100); */
 }
-
+#block-titulocontacto{
+    width: 100%;
+}
+#block-webform{
+    width: 100%;
+}
 .contacto-info h3{
     font-size: 22px;
     color: var(--black-900);
@@ -552,6 +555,9 @@ Contact Section
     padding-top: 12px;
     resize: none;
 
+}
+.contacto .contextual-region.block.block-webform.block-webform-block{
+    width: 100%;
 }
 
 
@@ -762,4 +768,7 @@ Responsive
     
     
     
+}
+.main-content.col{
+    padding: 0;
 }
