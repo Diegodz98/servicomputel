@@ -1,0 +1,43 @@
+{{ attach_library('gestion_usuario/modal') }}
+{{ attach_library('bootstrap_barrio/libraries') }}
+
+
+<div class="container text-align-center justify-content-center">
+    <div class="row">
+        <div class="col">
+            <h2>{{ titulo }}</h2>
+<p>{{ descripcion }}</p>
+        </div>
+    </div>
+</div>
+ 
+{% if usuarios %}
+    <div class="container">
+            
+         
+           
+                    {% for usuario in usuarios %}
+                        {% for data in usuario %}
+                        <div class="row align-items-center text-sm-center">
+                            <div class="col-lg-4 ali">
+                            <p class="texto-nombre">{{ data[0] }} <span>{{ data[1] }}</span></p>
+                            
+                            </div>
+                            <div class="col-lg-4">
+                            <p>{{ data[2] }}</p>
+                            </div>
+                            <div class="col-lg-4">
+                            <a href="https://api.whatsapp.com/send?phone=+57{{data[2] }}&text=Buen%20d%C3%ADa%20{{data[0]}}" target="_blank" class="wsap"><i class="fab fa-whatsapp-square"></i></a>
+                            <a href="tel:+{{ data[2] }}" class="telefono"><i class="fas fa-phone-square"></i></a>
+                            </div>
+                        </div>
+                            <hr>
+                            
+                        {% endfor %}
+                    {% endfor %}
+            
+    </div>
+
+
+{% endif %}
+

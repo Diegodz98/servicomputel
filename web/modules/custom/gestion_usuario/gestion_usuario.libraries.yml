@@ -1,0 +1,8 @@
+modal:
+  css:
+    theme:
+      css/modal.css: {}
+  js:
+    js/modal.js: {}
+  dependencies:
+    - core/jquery

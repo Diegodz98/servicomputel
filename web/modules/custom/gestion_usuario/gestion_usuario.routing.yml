@@ -1,0 +1,6 @@
+gestion_usuario.lista_usuarios:
+  path: '/usuarios/lista'
+  defaults:
+    _controller: 'Drupal\gestion_usuario\Controller\UsuarioController::listar'
+  requirements:
+    _permission: 'gestion de usuarios'    

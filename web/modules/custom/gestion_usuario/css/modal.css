@@ -1,0 +1,29 @@
+.texto-nombre{
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.texto-nombre span{
+    font-size: 0.9rem;
+    color: rgb(129, 129, 129);
+    font-weight: 400;
+    display: block;
+
+}
+
+a i{
+    font-size: 3rem;
+}
+.wsap{
+    color: #00bb2d ;
+} 
+.wsap:hover{
+    color: #048623 ;
+} 
+
+.telefono{
+    color: #045C97;
+}
+.telefono:hover{
+    color: #003457;
+}

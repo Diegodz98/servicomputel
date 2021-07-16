@@ -1,0 +1,6 @@
+name:  gestion_usuario
+type: module
+core_version_requirement: ^9
+package: Custom
+dependencies:
+- drupal:user

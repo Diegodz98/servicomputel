@@ -1,0 +1,5 @@
+gestion_usuario.lista_usuarios:
+  title: 'Usuario'
+  description: 'Listado de Usuarios'
+  route_name: gestion_usuario.lista_usuarios
+  menu_name: 'main'
