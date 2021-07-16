@@ -12,36 +12,30 @@
 
       }
   };
+  
+    const menu = document.querySelector('.navbar button');
+let estado = menu.getAttribute('aria-expanded');
+menu.addEventListener('click', (e) => {
+    estado = menu.getAttribute('aria-expanded')
+    if (e.target.nodeName == 'I') {
+        menu.click()
+    }
+    if (estado == "false") {
+        menu.innerHTML = '<i class="fas fa-times"></i>'
+    } else {
+        menu.innerHTML = '<i class="fas fa-bars"></i>'
+    }
+})
 
-  const menu = document.querySelector('.navbar button');
-  let estado = menu.getAttribute('aria-expanded');
-  menu.addEventListener('click', (e) => {
-      console.log(menu.innerHTML)
-      estado = menu.getAttribute('aria-expanded')
-      if (e.target.nodeName == 'I') {
-          menu.click()
-      }
-      if (estado == "false") {
-          menu.innerHTML = '<i class="fas fa-times"></i>'
-      } else {
-          menu.innerHTML = '<i class="fas fa-bars"></i>'
-      }
-  })
+$(".nav-link").on("click", () => {
+    $('.navbar-collapse').collapse('hide')
+})
 
-  $(".nav-link").on("click", () => {
-      $('.navbar-collapse').collapse('hide')
-  })
- 
-  const menuAdmin = document.querySelector('#toolbar-bar');
-  console.log( document.querySelector('#navbarPrincipal'))
-  if (menuAdmin) {
-      console.log('hola')
-      document.querySelector('#navbarPrincipal').classList.remove('fixed-top');
-  }
-
-
-
-})(jQuery, Drupal);
+const menuAdmin = document.querySelector('#toolbar-bar');
+if (menuAdmin) {
+    console.log('hola')
+    document.querySelector('#navbarPrincipal').classList.remove('fixed-top');
+}
 
 window.addEventListener('scroll', function () {
 
@@ -49,5 +43,7 @@ window.addEventListener('scroll', function () {
   menu.classList.toggle("navbar-fijo", window.scrollY > 0);
 });
 
+
+})(jQuery, Drupal);
 
 

@@ -154,7 +154,10 @@ body{
 
 
 }
-
+a:hover {
+    
+    text-decoration: none;
+}
 ul{
     list-style: none;
 }
@@ -244,7 +247,6 @@ Banner
 .banner{
     position: relative;
     min-height: calc(100vh - 80px);
-    margin-top:  80px;
     background: linear-gradient(180deg, #303A95 0%, #1793E5 73.44%)
 }
 .banner-text h1{
@@ -771,4 +773,7 @@ Responsive
 }
 .main-content.col{
     padding: 0;
+}
+#main-wrapper{
+    margin-top: 80px;
 }
