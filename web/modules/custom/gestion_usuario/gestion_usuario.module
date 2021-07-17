@@ -10,7 +10,8 @@ function gestion_usuario_theme($existing, $type, $theme, $path) {
                                 'variables' => array(
                                     'titulo' => 'Título por defecto',
                                     'descripcion' => 'descripción por defecto',
-                                    'usuarios'   => NULL
+                                    'usuarios'   => NULL,
+                                    'formulario'=> NULL
                                     ),
                                 'template' => 'lista_usuarios'
         )

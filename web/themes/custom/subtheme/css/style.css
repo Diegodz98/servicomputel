@@ -82,6 +82,11 @@ body{
     color: var(--color-1);
     background-color: #fff;
 }
+.pagination.js-pager__items,
+.table-responsive,
+.gestion-usuario-filtro{
+    padding: 0 100px ;
+}
 
 .btn-2{
     background-color: #ffffff;
